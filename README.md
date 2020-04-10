@@ -53,3 +53,7 @@ Adress: dorime.exada.host
 
 - Pronto, se divirta!
 
+#Regras 
+
+
+
