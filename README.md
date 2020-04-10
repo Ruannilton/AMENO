@@ -1,7 +1,7 @@
 # AMENO
 Minecraft Server repo
 
-Antes de tudo, atualize seu [JAVA](https://www.java.com/pt_BR/download/)
+Antes de tudo, atualize seu [JAVA](https://www.java.com/pt_BR/download/windows-64bit.jsp)
 
 Qualquer problema avisa
 
