@@ -37,21 +37,7 @@ aloco 3Gb (de preferencia no minimo 3Gb)
 
 ![select forge version] (https://github.com/Ruannilton/AMENO/blob/master/tutorial/select%20forge%20release.png)
 
-- Sempre que for jogar verifique se está com a versão correta
 
-![verificar versão](https://github.com/Ruannilton/AMENO/blob/master/tutorial/verifica%C3%A7%C3%A3o.png)
-
-- Clique em jogar, espere carregar e quando aparecer a seguinte mensage clique em done
-
-![mensagem] (https://github.com/Ruannilton/AMENO/blob/master/tutorial/done.png)
-
-- Quando carregar clique, em multiplayer, adicione um server e na configuração dele coloque o seguinte host
-
-Adress: dorime.exada.host
-
-![server_config] (https://github.com/Ruannilton/AMENO/blob/master/tutorial/host.png)
-
-- Pronto, se divirta!
 
 # Regras 
 
