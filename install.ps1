@@ -47,16 +47,28 @@ function shignima {
     $proc.WaitForExit()
 }
 
+function shignimaFinish {
+    Clear-Host
+    Write-Output "Volte para o Shiginima e selecione a versão do forge"
+    Write-Output ""
+
+    Start-Process 'Shiginima Launcher SE v4400.exe'
+}
+
 function forge {
     Clear-Host
     Write-Output "1. Clique em OK e espere a instalacao concluir"
     Write-Output ""
-    Write-Output "2. Depois va para a pasta .minecraft (%appdata%) e copie a pasta mods dentro de AMENO pra ela"
-    Write-Output ""
-    Write-Output "3. Volte para o Shiginima e selecione a versao do forge"
 
-    $proc = Start-Process 'forge-1.12.2-14.23.5.2847-installer-win.exe' -PassThru
-    $proc.WaitForExit()
+    Start-Process 'forge-1.12.2-14.23.5.2847-installer-win.exe' -Wait
+}
+
+function mods {
+    $destinationDirectory = $env:APPDATA + '\.minecraft\mods\'
+    $currentLocation = Get-Location
+    $sourceDirectory = "$($currentLocation)\mods\"
+
+    Copy-item -Force -Recurse $sourceDirectory -Destination $destinationDirectory | Out-Null
 }
 
 function manageInstall {
@@ -65,9 +77,12 @@ function manageInstall {
     Set-Location AMENO
     shignima
     forge
+    mods
+    shignimaFinish
 }
 
 manageInstall
+
 Write-Output "Link do Server: dorime.enxada.host"
 Write-Output ""
 Write-Output "Se divirta!"
