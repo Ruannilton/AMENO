@@ -2,7 +2,7 @@
 
 Minecraft Server Repo
 
-Clone esta branch clicando em Clone > baixar .zip e extraia a pasta.
+Clone esta branch clicando em "Clone or download" > .zip e extraia a pasta.
 
 Se já tiver o Java (JRE) instalado, abra o arquivo install.ps1 com um editor de texto e na seguinte parte:
 
