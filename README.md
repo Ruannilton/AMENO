@@ -1,6 +1,8 @@
 # AMENO
 Minecraft Server repo
 
+[Instalação simplificada](https://github.com/Ruannilton/AMENO/tree/install)
+
 Antes de tudo, atualize seu [JAVA](https://www.java.com/pt_BR/download/windows-64bit.jsp)
 
 Qualquer problema avisa
