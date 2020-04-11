@@ -12,10 +12,19 @@ function choco {
 }
 
 function java {
+    $javaVersion = powershell java -version
+
+    if ($javaVersion) {
+        Write-Output "Java already installed"
+        Write-Output ""
+        return
+    }
+
     $chocoVersion = powershell choco -v
 
     if (-not($chocoVersion)) {
-        Write-Output "Installing chocolatey...";
+        Write-Output "Installing chocolatey..."
+        Write-Output ""
         choco
     }
     else {
