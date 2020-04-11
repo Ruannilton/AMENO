@@ -2,6 +2,8 @@
 
 Minecraft Server Repo
 
+Clone esta branch clicando em Clone > baixar .zip e extraia a pasta.
+
 Se já tiver o Java (JRE) instalado, abra o arquivo install.ps1 com um editor de texto e na seguinte parte:
 
 ```
@@ -30,7 +32,7 @@ function manageInstall {
 }
 ```
 
-Para instalar abra o Powershell em modo de administrador e execute o seguinte comando:
+Para instalar abra o Powershell em modo de administrador, coloque-o com localização (cd ou Set-Location) no caminho da pasta baixada e execute o seguinte comando:
 
 ```
 powershell -ExecutionPolicy Unrestricted
