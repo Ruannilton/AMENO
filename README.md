@@ -2,6 +2,34 @@
 
 Minecraft Server Repo
 
+Se já tiver o Java (JRE) instalado, abra o arquivo install.ps1 com um editor de texto e na seguinte parte:
+
+```
+function manageInstall {
+    java
+    git
+    Set-Location AMENO
+    shignima
+    forge
+    mods
+    shignimaFinish
+}
+```
+
+Substitua por:
+
+```
+function manageInstall {
+    # java
+    git
+    Set-Location AMENO
+    shignima
+    forge
+    mods
+    shignimaFinish
+}
+```
+
 Para instalar abra o Powershell em modo de administrador e execute o seguinte comando:
 
 ```
