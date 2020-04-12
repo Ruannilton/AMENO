@@ -1,6 +1,8 @@
 # AMENO
 Minecraft Server repo
 
+[Instalação simplificada](https://github.com/Ruannilton/AMENO/tree/install)
+
 Antes de tudo, atualize seu [JAVA](https://www.java.com/pt_BR/download/windows-64bit.jsp)
 
 Qualquer problema avisa
@@ -37,7 +39,8 @@ aloco 3Gb (de preferencia no minimo 3Gb)
 
 ![select forge version] (https://github.com/Ruannilton/AMENO/blob/master/tutorial/select%20forge%20release.png)
 
-
+- Link do Server:
+dorime.enxada.host
 
 # Regras 
 
