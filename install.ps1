@@ -24,7 +24,7 @@ function choco {
 }
 
 function java {
-    $isJavaInstalled = Test-Path -Path "$env:ProgramFiles\Java\jre1.8.0_241"
+    $isJavaInstalled = Test-Path -Path "$env:ProgramFiles\Java\jre*"
 
     if ($isJavaInstalled) {
         Write-Output "Java already installed"
