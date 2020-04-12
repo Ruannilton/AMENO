@@ -1,3 +1,7 @@
+param (
+    [switch]$test
+)
+
 function choco {
     $executionPolicy = Get-ExecutionPolicy
 
@@ -38,6 +42,10 @@ function java {
 
 function git {
     powershell git clone https://github.com/Ruannilton/AMENO
+
+    if ($test) {
+        powershell git checkout Testes
+    }
 }
 
 function shignima {

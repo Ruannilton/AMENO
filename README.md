@@ -16,7 +16,15 @@ Logo após execute:
 ./install.ps1
 ```
 
-E siga todas as instruções.
+ou:
+
+```
+./install.ps1 -test
+```
+
+Para acessar os dados de teste.
+
+Siga todas as instruções.
 
 # Regras
 
