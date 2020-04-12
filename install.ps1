@@ -2,7 +2,19 @@ param (
     [switch]$test
 )
 
+function verifyInstall($name) {
+
+}
+
 function choco {
+    $isChocoInstalled = Test-Path -Path "$env:ProgramData\Chocolatey"
+
+    if ($isChocoInstalled) {
+        Write-Output "Choco already installed"
+        Write-Output ""
+        return
+    }
+
     $executionPolicy = Get-ExecutionPolicy
 
     if ($executionPolicy -eq "Restricted") {
@@ -16,28 +28,20 @@ function choco {
 }
 
 function java {
-    $javaVersion = powershell java -version
+    $isJavaInstalled = Test-Path -Path "$env:ProgramFiles\Java\jre1.8.0_241"
 
-    if ($javaVersion) {
+    if ($isJavaInstalled) {
         Write-Output "Java already installed"
         Write-Output ""
         return
     }
 
-    $chocoVersion = powershell choco -v
-
-    if (-not($chocoVersion)) {
-        Write-Output "Installing chocolatey..."
-        Write-Output ""
-        choco
-    }
-    else {
-        Write-Output "Installing JRE..."
-        Write-Output ""
-        powershell choco install javaruntime
-        Write-Output "JRE installed" 
-        Write-Output ""
-    }
+    Write-Output "Installing JRE..."
+    Write-Output ""
+    powershell choco install javaruntime
+    Write-Output "JRE installed" 
+    Write-Output ""
+    
 }
 
 function git {
@@ -77,7 +81,7 @@ function forge {
     Write-Output "1. Clique em OK e espere a instalacao concluir"
     Write-Output ""
 
-    Start-Process 'forge-1.12.2-14.23.5.2847-installer-win.exe' -Wait
+    Start-Process 'forge.exe' -Wait
 }
 
 function mods {
@@ -89,6 +93,7 @@ function mods {
 }
 
 function manageInstall {
+    choco
     java
     git
     Set-Location AMENO
