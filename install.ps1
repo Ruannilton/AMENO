@@ -68,7 +68,7 @@ function shignima {
 
 function shignimaFinish {
     Clear-Host
-    Write-Output "Volte para o Shiginima e selecione a versão do forge"
+    Write-Output "Volte para o Shiginima e selecione a versao do forge"
     Write-Output ""
 
     Start-Process 'Shiginima Launcher SE v4400.exe'
@@ -83,6 +83,10 @@ function forge {
 }
 
 function mods {
+    Clear-Host
+    Write-Output "1. Copiando mods para .minecraft..."
+    Write-Output ""
+
     $destinationDirectory = $env:APPDATA + '\.minecraft\mods\'
     $currentLocation = Get-Location
     $sourceDirectory = "$($currentLocation)\mods\"
@@ -102,6 +106,7 @@ function manageInstall {
 
 manageInstall
 
+Clear-Host
 Write-Output "Link do Server: dorime.enxada.host"
 Write-Output ""
 Write-Output "Se divirta!"
