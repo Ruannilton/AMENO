@@ -2,10 +2,6 @@ param (
     [switch]$test
 )
 
-function verifyInstall($name) {
-
-}
-
 function choco {
     $isChocoInstalled = Test-Path -Path "$env:ProgramData\Chocolatey"
 
@@ -41,13 +37,15 @@ function java {
     powershell choco install javaruntime
     Write-Output "JRE installed" 
     Write-Output ""
-    
 }
 
 function git {
     powershell git clone https://github.com/Ruannilton/AMENO
 
+    Set-Location AMENO
+
     if ($test) {
+        Write-Output "Changing for test branch..."
         powershell git checkout Testes
     }
 }
@@ -96,7 +94,6 @@ function manageInstall {
     choco
     java
     git
-    Set-Location AMENO
     shignima
     forge
     mods
