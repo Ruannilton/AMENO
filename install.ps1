@@ -106,7 +106,6 @@ function manageInstall {
 
 manageInstall
 
-Clear-Host
 Write-Output "Link do Server: dorime.enxada.host"
 Write-Output ""
 Write-Output "Se divirta!"
