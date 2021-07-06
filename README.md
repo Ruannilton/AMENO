@@ -1,9 +1,10 @@
-# AMENO
-Minecraft Server repo
+# DORIME
 
 Antes de tudo, atualize seu [JAVA](https://www.java.com/pt_BR/download/windows-64bit.jsp)
 
 Qualquer problema avisa
+
+### ( Shiginima Launcher é apenas um launcher não oficial do minecraft, coloquei aqui apenas por praticidade mas fique a vontade para utilizar o que quiser)
 
 - Execute Shiginima Launcher SE v4400.exe, coloque o seu nick, clique em 'save username' e depois em 'play', esse mesmo nick será
 utilizado para permitir que você se conecte com o servidor
