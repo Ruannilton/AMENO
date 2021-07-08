@@ -30,7 +30,7 @@ aloco 3Gb (de preferencia no minimo 3Gb)
 
 ![install-forge](https://github.com/Ruannilton/AMENO/blob/master/tutorial/install%20forge.png)
 
-- Depois vá para a pasta .minecraft e copie a pasta mods daqui do repositório pra ela
+- Depois vá para a pasta .minecraft e copie a pasta mods e a pasta config daqui do repositório pra ela
 - Aperte win+r e digite %appdata%, ao apertar OK abrirá uma pasta contendo a pasta .minecraft
 - copie a pasta mods para a .minecraft
 
