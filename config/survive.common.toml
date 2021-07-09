@@ -72,7 +72,7 @@
 	#Default: 0.1125
 	#-------------------------------------------
 	#Range: 0.0 ~ 4.0
-	"Float: Idle Thirst Exhaustion" = 0.1125
+	"Float: Idle Thirst Exhaustion" = 0.2250
 	#
 	############################################
 	#Enabling this allows players to drink water from flowing water sources. This is only allowed for infinite water sources
