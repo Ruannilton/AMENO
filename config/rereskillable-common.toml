@@ -8,7 +8,7 @@ startingCost = 2
 costIncrease = 1
 #Maximum level each skill can be upgraded to.
 #Range: 2 ~ 100
-maximumLevel = 32
+maximumLevel = 40
 #List of item and block skill requirements.
 #Format: mod:id skill:level
 #Valid skills: attack, defence/defense, mining, gathering, farming, building, agility, magic

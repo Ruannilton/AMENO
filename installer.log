@@ -1,9 +1,10 @@
 JVM info: Oracle Corporation - 1.8.0_291 - 25.291-b10
 java.net.preferIPv4Stack=true
 Found java version 1.8.0_291
-Extracting main jar:
-  Extracted successfully
-Considering minecraft server jar
+Extracting json
+Considering minecraft client jar
+  Downloading library from https://launcher.mojang.com/v1/objects/0f275bc1547d01fa5f56ba34bdc87d981ee12daf/client.jar
+    Download completed: Checksum validated.
 Downloading libraries
 Considering library net.minecraftforge:forge:1.12.2-14.23.5.2855
   Extracting library from /maven/net/minecraftforge/forge/1.12.2-14.23.5.2855/forge-1.12.2-14.23.5.2855.jar
@@ -80,4 +81,5 @@ Considering library net.sf.jopt-simple:jopt-simple:5.0.3
   Downloading library from https://libraries.minecraft.net/net/sf/jopt-simple/jopt-simple/5.0.3/jopt-simple-5.0.3.jar
     Download completed: Checksum validated.
 Building Processors
+Injecting profile
 Finished!
